@@ -1,5 +1,8 @@
 version: 0.1
 phases:
+  build:
+    commands:
+      - pip install elasticsearch
   install:
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket lambdapipeline-assignment --output-template-file outputsamtemplate.yml
