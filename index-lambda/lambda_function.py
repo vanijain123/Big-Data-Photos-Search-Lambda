@@ -15,6 +15,7 @@ def lambda_handler(event, context):
     # obj = s3.Object("photos-hw2", file)
     # body = obj.get()['Body'].read()  
     labels=[]
+    #lambda modification
 
     try:
         rekognition_client = boto3.client('rekognition')
